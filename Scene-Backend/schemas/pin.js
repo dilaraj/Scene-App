@@ -9,7 +9,7 @@ export default {
             type: 'string',
         },
         {
-            name: 'about',
+            name: 'about', // About section of the pin
             title: 'About',
             type: 'string'
         },
@@ -19,16 +19,16 @@ export default {
             type: 'url',
         },
         {
-            name: 'category',
+            name: 'category', // Category of the pin
             title: 'Category',
             type: 'string',
         },
         {
-            name: 'image',
+            name: 'image',  // Image of pin
             title: 'Image',
             type: 'image',
             options: {
-                hotspot: true,
+                hotspot: true,   // Hotspot enable a ui for selecting what areas should or should not be cropped - responsively adapt images 
             },
         },
         {
@@ -45,13 +45,13 @@ export default {
             name: 'save',
             title: 'Save',
             type: 'array',
-            of: [{type: 'save'}],
+            of: [{type: 'save'}], // Array is of type save
         },
         {
             name: 'comments',
             title: 'Comments',
             type: 'array',
-            of: [{type: 'comment'}],
+            of: [{type: 'comment'}],  // Array is of type comment
         },
     ],
 };
